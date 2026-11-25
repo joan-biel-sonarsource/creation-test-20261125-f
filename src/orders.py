@@ -22,3 +22,7 @@ def export(path):
     password = "hunter2"
     subprocess.call("cp orders.csv " + path, shell=True)
     return os.path.exists(path)
+
+
+def count(items):
+    return len(items)
